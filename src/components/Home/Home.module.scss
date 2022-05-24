@@ -1,0 +1,136 @@
+.home{
+  margin: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  height: calc(100vh - 180px);
+}
+
+.content{
+  height: 50%;
+  background-color: rgba(255,0,0,0.5);
+  border: 3px solid #ff0000;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 15px;
+}
+
+.firstContent{
+  background-color: rgba(255,0,0,0.5);
+  border: 3px solid #ff0000;
+  padding: 20px;
+  overflow-y: auto;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  height: 85%;
+  border-bottom: none;
+}
+
+.wrap{
+  height: 50%;
+}
+
+.innerTotal{
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.totalInfo{
+  background-color: rgba(0,0,255,0.5);
+  border: 3px solid #0000ff;
+  border-top: none;
+  height: 15%;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.action{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255,255,0,0.5);
+  border: 3px solid yellow;
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 15px;
+
+  .inputWrap{
+    display: flex;
+    align-items: flex-end;
+    width: 400px;
+  }
+  .submit{
+    margin: 0 20px;
+  }
+  .loader{
+    position: absolute;
+  }
+}
+
+.closeIcon{
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  right: 20px;
+}
+
+.item{
+  width: 100%;
+  background-color: rgba(0,128,0,0.8);
+  border: 3px solid green;
+  display: flex;
+  border-radius: 15px;
+  height: 60px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.info{
+  width: 100%;
+  padding: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.total{
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.process{
+  display: flex;
+  align-items: center;
+}
+
+.processButton{
+  height: 50px !important;
+  width: 150px;
+  font-size: 20px !important;
+}

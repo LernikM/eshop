@@ -1,0 +1,11 @@
+{
+  "realm": "nnsw",
+  "auth-server-url": "https://uatsso.nnsw.gov.np/auth/",
+  "ssl-required": "external",
+  "resource": "exim",
+  "public-client": true,
+  "credentials": {
+    "secret": "ea0f6672-a20d-4a84-a683-62677fe2d53f"
+  },
+  "confidential-port": 0
+}
