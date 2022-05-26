@@ -36,7 +36,7 @@ const Home = () => {
   const handleSearch = () => {
     setLoading(true);
     axios
-      .get(`http://10.212.18.237:8060/eshop/product/getByHsCode/${value}`)
+      .get(`http://localhost:8060/eshop/product/getByHsCode/${value}`)
       .then(({ data }) => {
         if (data.calorie === 0) {
           setFirstData([{ ...data, id: Math.random() }, ...firstData]);
