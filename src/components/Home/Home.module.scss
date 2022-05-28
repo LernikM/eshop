@@ -12,16 +12,16 @@
 
 .content{
   height: 50%;
-  background-color: rgba(255,0,0,0.5);
-  border: 3px solid #ff0000;
+  background-color: rgba(0, 227, 225, 0.49);
+  border: 3px solid #00E3E17C;
   padding: 20px;
   overflow-y: auto;
   border-radius: 15px;
 }
 
-.firstContent{
-  background-color: rgba(255,0,0,0.5);
-  border: 3px solid #ff0000;
+.firstContent {
+  background-color: rgba(0, 227, 225, 0.49);
+  border: 3px solid #00E3E17C;
   padding: 20px;
   overflow-y: auto;
   border-top-left-radius: 20px 20px;
@@ -34,9 +34,9 @@
   height: 50%;
 }
 
-.innerTotal{
+.innerTotal {
   background-color: white;
-  width: 200px;
+  width: 300px;
   height: 30px;
   font-size: 14px;
   align-items: center;
@@ -46,9 +46,9 @@
   padding: 10px;
 }
 
-.totalInfo{
-  background-color: rgba(0,0,255,0.5);
-  border: 3px solid #0000ff;
+.totalInfo {
+  background-color: #000cff;
+  border: 3px solid #000cff;
   border-top: none;
   height: 15%;
   border-bottom-left-radius: 20px 20px;
@@ -59,12 +59,12 @@
   padding: 0 20px;
 }
 
-.action{
+.action {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255,255,0,0.5);
-  border: 3px solid yellow;
+  background-color: red;
+  border: 3px solid red;
   width: 100%;
   height: 120px;
   padding: 20px;
@@ -72,7 +72,7 @@
   position: relative;
   border-radius: 15px;
 
-  .inputWrap{
+  .inputWrap {
     display: flex;
     align-items: flex-end;
     width: 400px;
@@ -112,8 +112,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.total{
-  width: 250px;
+.total {
+  width: 350px;
   height: 50px;
   background-color: white;
   display: flex;

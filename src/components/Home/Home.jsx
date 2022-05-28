@@ -71,31 +71,31 @@ const Home = () => {
               <div key={el.id} className={styles.item}>
                 <div className={styles.info}>
                   <span>
-                    <b>amount:</b> {el.amount}
+                    <b>Արժեք:</b> {el.amount}
                   </span>
                   <span>
-                    <b>companyName:</b> {el.companyName}
+                    <b>Կազմակերպության անուն:</b> {el.companyName}
                   </span>
                   <span>
-                    <b>country:</b> {el.country}
+                    <b>Արտադրող երկիր:</b> {el.country}
                   </span>
                   <span>
-                    <b>description:</b> {el.description}
+                    <b>Նկարագրություն:</b> {el.description}
                   </span>
                   <span>
-                    <b>calorie:</b> {el.calorie}
+                    <b>Կալորիականություն:</b> {el.calorie}
                   </span>
                   <span>
-                    <b>name:</b> {el.name}
+                    <b>Անուն:</b> {el.name}
                   </span>
                   <span>
-                    <b>validFrom:</b> {el.validFrom}
+                    <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                   </span>
                   <span>
-                    <b>validTo:</b> {el.validTo}
+                    <b>Պիտանի է մինչև:</b> {el.validTo}
                   </span>
                   <span>
-                    <b>mass:</b> {el.mass}
+                    <b>Քաշ:</b> {el.mass}
                   </span>
                 </div>
                 {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
@@ -109,10 +109,10 @@ const Home = () => {
             {" "}
             <p className={styles.innerTotal}>
               <span>
-                <b>Total :</b> {calorieCount}
+                <b>Ընդհանուր :</b> {calorieCount}
               </span>
               <span>
-                <b>kal</b>
+                <b>Կալորիա</b>
               </span>
             </p>
           </div>
@@ -123,29 +123,29 @@ const Home = () => {
             <div key={el.id} className={styles.item}>
               <div className={styles.info}>
                 <span>
-                  <b>amount:</b> {el.amount}
+                  <b>Արժեք:</b> {el.amount}
                 </span>
                 <span>
-                  <b>companyName:</b> {el.companyName}
+                  <b>Կազմակերպության անուն:</b> {el.companyName}
                 </span>
                 <span>
-                  <b>country:</b> {el.country}
+                  <b>Արտադրող երկիր:</b> {el.country}
                 </span>
                 <span>
-                  <b>description:</b> {el.description}
+                  <b>Նկարագրություն:</b> {el.description}
                 </span>
                 <span></span>
                 <span>
-                  <b>mass:</b> {el.mass}
+                  <b>Քաշ:</b> {el.mass}
                 </span>
                 <span>
-                  <b>name:</b> {el.name}
+                  <b>Անուն:</b> {el.name}
                 </span>
                 <span>
-                  <b>validFrom:</b> {el.validFrom}
+                  <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                 </span>
                 <span>
-                  <b>validTo:</b> {el.validTo}
+                  <b>Պիտանի է մինչև:</b> {el.validTo}
                 </span>
               </div>
               {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
@@ -169,33 +169,33 @@ const Home = () => {
             maxLength={8}
             type={"number"}
             errorMessage={error}
-            label={"HS CODE"}
+            label={"Ապրանքի ունիկալ կոդ"}
             hasError={!!error?.length}
           />
           <Button className={styles.submit} onClick={() => handleSearch()} disabled={!value.length || loading}>
             {loading && <Loader className={styles.loader} />}
-            {!loading && "Submit"}
+            {!loading && "Ավելացնել"}
           </Button>
         </div>
         <div className={styles.process}>
           <span className={styles.total}>
             <span>
-              <b>Total :</b> {totalValues.massCount}
+              <b>Ընդհանուր :</b> {totalValues.massCount}
             </span>
             <span>
-              <b>kg</b>
+              <b>Կիլոգրամ</b>
             </span>
           </span>
           <span className={styles.total}>
             {" "}
             <span>
-              <b>Total :</b> {totalValues.amountCount}
+              <b>Ընդհանուր :</b> {totalValues.amountCount}
             </span>
             <span>
-              <b>dr</b>
+              <b>Դրամ</b>
             </span>
           </span>
-          <Button className={styles.processButton}>Process</Button>
+          <Button className={styles.processButton}>ՎՃԱՐԵԼ</Button>
         </div>
       </div>
     </div>
