@@ -71,13 +71,13 @@ const Home = () => {
               <div key={el.id} className={styles.item}>
                 <div className={styles.info}>
                   <span>
-                    <b>Արժեք:</b> {el.amount}
+                    <b>Անուն:</b> {el.name}
                   </span>
                   <span>
                     <b>Կազմակերպության անուն:</b> {el.companyName}
                   </span>
                   <span>
-                    <b>Արտադրող երկիր:</b> {el.country}
+                    <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                   </span>
                   <span>
                     <b>Նկարագրություն:</b> {el.description}
@@ -86,10 +86,10 @@ const Home = () => {
                     <b>Կալորիականություն:</b> {el.calorie}
                   </span>
                   <span>
-                    <b>Անուն:</b> {el.name}
+                    <b>Արժեք:</b> {el.amount}
                   </span>
                   <span>
-                    <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
+                    <b>Արտադրող երկիր:</b> {el.country}
                   </span>
                   <span>
                     <b>Պիտանի է մինչև:</b> {el.validTo}
@@ -123,29 +123,29 @@ const Home = () => {
             <div key={el.id} className={styles.item}>
               <div className={styles.info}>
                 <span>
-                  <b>Արժեք:</b> {el.amount}
+                  <b>Անուն:</b> {el.name}
                 </span>
                 <span>
                   <b>Կազմակերպության անուն:</b> {el.companyName}
                 </span>
                 <span>
-                  <b>Արտադրող երկիր:</b> {el.country}
+                  <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                 </span>
                 <span>
                   <b>Նկարագրություն:</b> {el.description}
                 </span>
                 <span></span>
                 <span>
-                  <b>Քաշ:</b> {el.mass}
+                  <b>Արժեք:</b> {el.amount}
                 </span>
                 <span>
-                  <b>Անուն:</b> {el.name}
-                </span>
-                <span>
-                  <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
+                  <b>Արտադրող երկիր:</b> {el.country}
                 </span>
                 <span>
                   <b>Պիտանի է մինչև:</b> {el.validTo}
+                </span>
+                <span>
+                  <b>Քաշ:</b> {el.mass}
                 </span>
               </div>
               {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
