@@ -1,0 +1,34 @@
+.pay {
+  height: calc(100vh - 80px);
+}
+
+.loader {
+  height: fit-content;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.totalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  height: 50px;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  .innerTotal {
+
+  }
+}
+.buttonWrap{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
+

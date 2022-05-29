@@ -1,8 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styles from "./Home.module.scss";
 import { Button, Input } from "@wf/components";
 import Loader from "@wf/keycloak-axios-provider/dist/es/src/components/Loader/Loader";
 import axios from "axios";
+import { useHistory } from "react-router";
 
 const Home = () => {
   const [value, setValue] = useState("");
@@ -10,6 +11,7 @@ const Home = () => {
   const [lastData, setLastData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const history = useHistory();
 
   const calorieCount = useMemo(() => {
     let count = 0;
@@ -32,6 +34,20 @@ const Home = () => {
     });
     return { massCount, amountCount };
   }, [lastData, firstData]);
+
+  useEffect(() => {
+    const myObject = { lastData, firstData };
+
+    return () => {
+      localStorage.setItem("data", JSON.stringify(myObject));
+    };
+  }, [lastData, firstData]);
+
+  useEffect(() => {
+    const newData = JSON.parse(localStorage.getItem("data"));
+    setFirstData(newData.firstData);
+    setLastData(newData.lastData);
+  }, []);
 
   const handleSearch = () => {
     setLoading(true);
@@ -195,7 +211,13 @@ const Home = () => {
               <b>Դրամ</b>
             </span>
           </span>
-          <Button className={styles.processButton}>ՎՃԱՐԵԼ</Button>
+          <Button
+            className={styles.processButton}
+            onClick={() => history.push("/pay")}
+            disabled={!firstData.length && !lastData.length}
+          >
+            ՎՃԱՐԵԼ
+          </Button>
         </div>
       </div>
     </div>

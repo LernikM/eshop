@@ -1,0 +1,48 @@
+.result {
+  height: calc(100vh - 80px);
+}
+
+.loader {
+  height: 600px;
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  .img{
+    width: 300px;
+    margin: 0 auto;
+    img{
+      width: 100%;
+    }
+    .imgTitle{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+  }
+}
+
+.totalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  height: 50px;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  .innerTotal {
+
+  }
+}
+.buttonWrap{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
+
