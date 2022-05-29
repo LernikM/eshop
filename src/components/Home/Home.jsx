@@ -36,7 +36,7 @@ const Home = () => {
   const handleSearch = () => {
     setLoading(true);
     axios
-      .get(`http://localhost:8060/eshop/product/getByHsCode/${value}`)
+      .get(`http://192.168.1.42:8060/eshop/product/getByHsCode/${value}`)
       .then(({ data }) => {
         if (data.calorie === 0) {
           setFirstData([{ ...data, id: Math.random() }, ...firstData]);
@@ -45,7 +45,7 @@ const Home = () => {
         }
       })
       .catch(() => {
-        setError("Invalid Code");
+        setError("Ապրանքի սխալ կոդ");
       })
       .finally(() => {
         setLoading(false);
@@ -80,13 +80,13 @@ const Home = () => {
                     <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                   </span>
                   <span>
-                    <b>Նկարագրություն:</b> {el.description}
+                    <b>Արժեք:</b> {el.amount}
                   </span>
                   <span>
                     <b>Կալորիականություն:</b> {el.calorie}
                   </span>
                   <span>
-                    <b>Արժեք:</b> {el.amount}
+                    <b>Նկարագրություն:</b> {el.description}
                   </span>
                   <span>
                     <b>Արտադրող երկիր:</b> {el.country}
@@ -132,11 +132,11 @@ const Home = () => {
                   <b>Արտադրման ամսաթիվ:</b> {el.validFrom}
                 </span>
                 <span>
-                  <b>Նկարագրություն:</b> {el.description}
+                  <b>Արժեք:</b> {el.amount}
                 </span>
                 <span></span>
                 <span>
-                  <b>Արժեք:</b> {el.amount}
+                  <b>Նկարագրություն:</b> {el.description}
                 </span>
                 <span>
                   <b>Արտադրող երկիր:</b> {el.country}
@@ -183,7 +183,7 @@ const Home = () => {
               <b>Ընդհանուր :</b> {totalValues.massCount}
             </span>
             <span>
-              <b>Կիլոգրամ</b>
+              <b>Գրամ</b>
             </span>
           </span>
           <span className={styles.total}>
