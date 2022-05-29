@@ -1,8 +1,11 @@
 {
-  "realm": "Diplomayin",
-  "auth-server-url": "http://192.168.1.42:8091/auth/",
-  "ssl-required": "none",
-  "resource": "eshop",
+  "realm": "nnsw",
+  "auth-server-url": "https://uatsso.nnsw.gov.np/auth/",
+  "ssl-required": "external",
+  "resource": "exim",
   "public-client": true,
+  "credentials": {
+    "secret": "ea0f6672-a20d-4a84-a683-62677fe2d53f"
+  },
   "confidential-port": 0
 }
